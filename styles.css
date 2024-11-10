@@ -1,53 +1,60 @@
 body{
     margin: 0;
+    overflow: scroll;
 }
+
 header {
-    background: white;
     padding: 10px;
-    max-width: 1400px;
-    margin:  10px auto;
-    display: grid;
-    grid-template-columns: repeat(7, minmax(50px, auto));
-    align-items: center;
-    text-align: center;
+    margin: auto;
 }
-a{
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: 600;
     color:black;
+    padding: 10px;
+    margin-left: 15px;
 }
 .one{
-    border:1px solid black;
-    border-radius: 8px;
+    box-shadow: -1px 1px 8px -6px rgba(0,0,0,0.67);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
-/* .content{
-    display: flex;
-    gap:10px;
-    border-radius: 5px;
-    justify-content: space-between;
-    background: white;
-    /* max-width: 1000px; */
-    /* min-width: 1000px; */
-
-/* } */ 
-.background{
-    margin:auto 50px;
+.one img{
+    width:20px;
+    height: 20px;
+    padding-right:4px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
-.background h1{
-    font-size: 3em;
+.heading{
+    color:white;
     font-weight: bolder;
 }
+
 /* Styling the input */
-.background input{
+.content input{
     width: 400px;
-    height: 40px;
+    height: 35px;
     padding: 10px;
     border:1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 form button{
-    
     background-color: #1A1A3D;   
     color: white;                
     font-size: 16px;            
@@ -59,58 +66,66 @@ form button{
     font-family: Arial, sans-serif;
 }
 form button:hover {
-    background-color: #333366;  /* Slightly lighter shade on hover */
-}
-.background{
-    background-image: url('backgroundImg.jpeg'); /* Replace with your image path */
-    background-size: cover;                  /* Ensures the image covers the entire screen */
-    background-position: center;             /* Centers the background image */
-    background-repeat: no-repeat;            /* Prevents the image from repeating */
-    color: #fff;                           /*  Sets text color to ensure readability*/
-    align-items: center;
-    text-align: center;
-    margin: auto 5px;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    
+    background-color: #333366;
 }
 
-.content {
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);          /* Adds a semi-transparent overlay */
-    /* max-width: 600px; */
-    margin: 50px auto;
-    border-radius: 10px;
+.content{
     display: flex;
-    gap:10px;
-    border-radius: 5px;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-left:50px;
+    margin-right: 50px;
     background: white;
-    max-width: 1155px; 
-    /* background-attachment: fixed; */
-    /* min-width: 800px;  */
-    /* height: 55px; */
-}
-.over{
-    align-items: center;
+    padding:10px;
     border-radius: 10px;
-    margin: auto 20px;
 }
-.over h1{
-    margin-bottom: -30px;
+.heading{
+    display: flex;
+    align-content: center;
+    padding-left:50px;
+    font-size: 3em;
+    line-height: 5px;
+}
+.background{
+    background-image: url('backgroundImg.jpeg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: scroll; */
 }
 .announce{
+    display: flex;
+    margin: 25px auto;
+    background-color: #1A1A3D;   
+    color: white;
+    height: 80px;
+    max-width: 1200px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2px;
+}
+.announce img{
+    width:30px;
+    height: 30px;
+    padding:10px;    
+}
+.announce button{
+    justify-content:end;
+    background-color: #1A1A3D;   
+    color:white;  
+    padding: 5px 10px;        
+    border: none;                
+    border-radius: 20px;         
+    cursor: pointer;             
+    outline: none;               
+    font-family: Arial, sans-serif;
+    justify-self: end;
     
 }
+.announce button:hover{
+    background-color: #333366;
+
+}
+/* carasel */
