@@ -1,8 +1,13 @@
+/* @import "https://unpkg.com/open-props"; */
+/* @import "https://unpkg.com/open-props/normalize.min.css"; */
 body{
     margin: 0;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
+*::before *::after {
+    box-sizing: border-box;
+}
 header {
     padding: 10px;
     margin: auto;
@@ -127,5 +132,24 @@ form button:hover {
 .announce button:hover{
     background-color: #333366;
 
+}
+.media-scroller{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.media-element{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 8px -6px rgba(0,0,0,0.67);
+    
+}
+.location{
+    padding:10px;
+    border: 1px solid black;
+    box-shadow: -1px 1px 8px -6px rgba(0,0,0,0.67);
 }
 /* carasel */
